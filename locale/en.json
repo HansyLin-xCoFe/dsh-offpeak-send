@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH Scheduled send",
+    "description": "Adds a clock control before the composer submit action: schedule the current draft to be sent at a chosen time, for example once DeepSeek enters its off-peak pricing window."
+  }
+}

@@ -1,0 +1,8 @@
+# dsh-offpeak-send — the Host half is intentionally inert.
+# The browser half (client.js) arrives through the package's `dsh.client`
+# declaration, renders the composer control, and talks to the shipped Host
+# `schedule` service over its Remote namespace (`schedule/create`, `schedule/edit`,
+# `schedule/catalog`). Nothing is registered on the Host.
+- insert:
+    - id: dsh-offpeak-send
+      name: dsh-offpeak-send

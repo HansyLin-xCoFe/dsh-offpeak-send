@@ -1,0 +1,57 @@
+{
+  "name": "dsh-offpeak-send",
+  "version": "0.1.0",
+  "description": "Schedule a composer message to be sent at a chosen time, so DeepSeek tokens are spent inside the off-peak pricing window.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-api-remotes"
+      ]
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HansyLin-xCoFe/dsh-offpeak-send.git"
+  },
+  "homepage": "https://github.com/HansyLin-xCoFe/dsh-offpeak-send",
+  "author": {
+    "name": "HansyLin-xCoFe",
+    "url": "https://github.com/HansyLin-xCoFe"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "off-peak",
+    "schedule",
+    "web-ui"
+  ],
+  "license": "MIT"
+}
