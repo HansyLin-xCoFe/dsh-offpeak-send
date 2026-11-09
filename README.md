@@ -102,3 +102,4 @@ node --check client.js         # 浏览器半语法
 ## License
 
 MIT。本项目不是 DeepSeek 官方项目；定价/时段以 DeepSeek 官方文档为准。
+本项目的插件代码、文档、验证与发布流程，全部由 DeepSeek-V4.1-Flash 与 DeepSeek Harness 完成。
